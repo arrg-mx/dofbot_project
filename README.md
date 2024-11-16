@@ -45,7 +45,7 @@ Desarrollar e implementar un banco de pruebas virtual y físico de un robot Scor
 | Guzmàn Flores Carlos Ivàn | **Participante** | 
 | Rosas Cazares Luis Daniel       | **Participante** | 
 | Partida Sanchez Sebastian Yael  | **Participante** | 
-| Pizano Bravo Alexis  | **Participante** | 
+
 
 ## Referencias
 
