@@ -14,7 +14,7 @@ Desarrollar e implementar un banco de pruebas virtual y físico de un robot Scor
 
 ## Desarrollo
 
-- [ ] Banco de Prubas físico
+- [ ] Banco de Pruebas físico
     - [ ]   Configuración completa del robot
     - [ ]   Reproducción del entorno físico del robot
     - [ ]   Implementación del entorno de simulación del robot
@@ -45,7 +45,7 @@ Desarrollar e implementar un banco de pruebas virtual y físico de un robot Scor
 | Guzmàn Flores Carlos Ivàn | **Participante** | 
 | Rosas Cazares Luis Daniel       | **Participante** | 
 | Partida Sanchez Sebastian Yael  | **Participante** | 
-
+| Pizano Bravo Alexis  | **Participante** | 
 
 ## Referencias
 
