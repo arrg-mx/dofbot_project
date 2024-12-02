@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="dofbot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.092958" />
+      <inertia
+        ixx="8.4666E-05"
+        ixy="-9.6048E-10"
+        ixz="-1.861E-07"
+        iyy="0.0003416"
+        iyz="-8.8959E-10"
+        izz="0.00042523" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="1.52972323637995E-05 0.000744569809988192 -0.0254573183065196"
+        rpy="0 0 0" />
+      <mass
+        value="0.0188575206024816" />
+      <inertia
+        ixx="4.11728499100027E-06"
+        ixy="1.80448316145028E-12"
+        ixz="-1.06920580366297E-09"
+        iyy="3.57439741198646E-06"
+        iyz="6.13388047153788E-12"
+        izz="6.05161576281477E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="-8.0366E-05 -0.00065097 0.105"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="30"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.00364673399566767 0.000251983960418703 0.0323683022454689"
+        rpy="0 0 0" />
+      <mass
+        value="0.0174591727542548" />
+      <inertia
+        ixx="6.86995873163269E-06"
+        ixy="1.10104818137959E-09"
+        ixz="1.9534207527274E-09"
+        iyy="5.64400531125142E-06"
+        iyz="-2.15956230874851E-09"
+        izz="3.08536122150781E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.00366108090821959 0.000167191867573688 0.0323682945251025"
+        rpy="0 0 0" />
+      <mass
+        value="0.0174591727542548" />
+      <inertia
+        ixx="6.86995873163267E-06"
+        ixy="1.10104818137957E-09"
+        ixz="1.95342075272659E-09"
+        iyy="5.64400531125141E-06"
+        iyz="-2.15956230874842E-09"
+        izz="3.08536122150781E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="-4.6503E-05 0.00015021 0.084129"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.014536740956481 9.202150571151E-05 0.0414260171562048"
+        rpy="0 0 0" />
+      <mass
+        value="0.03384790814632" />
+      <inertia
+        ixx="7.68036508000479E-06"
+        ixy="9.4894894644643E-10"
+        ixz="-8.31009339966228E-07"
+        iyy="9.20152038844917E-06"
+        iyz="-1.0678072311523E-09"
+        izz="6.02622021715937E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-6.6502E-05 -0.00014979 0.084129"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0179459600550625 -0.00306374040304769 0.0302214278633109"
+        rpy="0 0 0" />
+      <mass
+        value="0.040829823783525" />
+      <inertia
+        ixx="7.04709944921313E-06"
+        ixy="-2.67088787347043E-08"
+        ixz="-2.34170691434143E-08"
+        iyy="3.23969501763003E-06"
+        iyz="8.48518921689459E-09"
+        izz="6.94268102340474E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="-5.9765E-05 0 0.075245"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="gr1link">
+    <inertial>
+      <origin
+        xyz="-0.00100132124199969 -0.00642307691956763 0.00242871751547785"
+        rpy="0 0 0" />
+      <mass
+        value="0.00109580521827977" />
+      <inertia
+        ixx="1.89412728089086E-07"
+        ixy="-1.63375534543232E-11"
+        ixz="2.02063664230262E-11"
+        iyy="3.74700571307862E-08"
+        iyz="3.04721382848993E-08"
+        izz="1.52673229999899E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gr1link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gr1link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gr1joint"
+    type="revolute">
+    <origin
+      xyz="-0.0036677 -0.01265 0.032098"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="gr1link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="0"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="g2linkr">
+    <inertial>
+      <origin
+        xyz="0.00298749004876309 0.00610316592226609 0.0225961781955154"
+        rpy="0 0 0" />
+      <mass
+        value="0.00231126837053933" />
+      <inertia
+        ixx="5.93484389378714E-07"
+        ixy="4.95914355751424E-11"
+        ixz="3.07636980960114E-10"
+        iyy="5.69883161018234E-07"
+        iyz="-8.95751234675308E-08"
+        izz="3.74691790079988E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/g2linkr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/g2linkr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="g2jointr"
+    type="continuous">
+    <origin
+      xyz="0 -0.028798 0.0084055"
+      rpy="0 0 0" />
+    <parent
+      link="gr1link" />
+    <child
+      link="g2linkr" />
+    <axis
+      xyz="1 0 0" />
+    <mimic
+      joint="gr1joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="gllink">
+    <inertial>
+      <origin
+        xyz="-0.00100121250078952 0.00601573036566417 0.00215705202599753"
+        rpy="0 0 0" />
+      <mass
+        value="0.00119580856000866" />
+      <inertia
+        ixx="2.00863730498492E-07"
+        ixy="1.8769776465998E-11"
+        ixz="2.11672112757855E-11"
+        iyy="3.88927384652794E-08"
+        iyz="-3.2981138825183E-08"
+        izz="1.62768221265338E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gllink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gllink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gljoint"
+    type="continuous">
+    <origin
+      xyz="-0.0036676 0.01223 0.031848"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="gllink" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="gr1joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="gl2link">
+    <inertial>
+      <origin
+        xyz="0.0029875132930908 -0.00598798647541424 0.022626970243851"
+        rpy="0 0 0" />
+      <mass
+        value="0.00231126837053934" />
+      <inertia
+        ixx="5.93484389753693E-07"
+        ixy="-4.79357704998391E-11"
+        ixz="3.07546161288983E-10"
+        iyy="5.70781800601373E-07"
+        iyz="8.6858775726957E-08"
+        izz="3.6570539049884E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gl2link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/gl2link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gl2joint"
+    type="continuous">
+    <origin
+      xyz="0 0.029211 0.0083241"
+      rpy="0 0 0" />
+    <parent
+      link="gllink" />
+    <child
+      link="gl2link" />
+    <axis
+      xyz="1 0 0" />
+    <mimic
+      joint="gljoint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="barlinkr">
+    <inertial>
+      <origin
+        xyz="-0.00100235523194683 0.0144074395069882 0.00417384365314122"
+        rpy="0 0 0" />
+      <mass
+        value="0.000282517801868373" />
+      <inertia
+        ixx="3.00387676410135E-08"
+        ixy="4.37927882059704E-12"
+        ixz="1.49605847955083E-12"
+        iyy="2.84816496049846E-09"
+        iyz="-7.75886841327748E-09"
+        izz="2.73789495648266E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/barlinkr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/barlinkr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="barjointr"
+    type="continuous">
+    <origin
+      xyz="-0.0036777 0.0045001 0.050098"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="barlinkr" />
+    <axis
+      xyz="-1 0 0" />
+    <mimic
+      joint="gr1joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="barlinkl">
+    <inertial>
+      <origin
+        xyz="-0.0010023395146931 -0.0143646690281107 0.00431874972764096"
+        rpy="0 0 0" />
+      <mass
+        value="0.000282517801868373" />
+      <inertia
+        ixx="3.00387676505334E-08"
+        ixy="-4.33441130211557E-12"
+        ixz="1.53133221200949E-12"
+        iyy="3.00694694284456E-09"
+        iyz="8.00436594627952E-09"
+        izz="2.72201675729605E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/barlinkl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/robousr/ROS2Dev/robotica_2025_ws/src/dofbot_description/meshes/barlinkl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="barjointl"
+    type="continuous">
+    <origin
+      xyz="-0.0036777 -0.0044999 0.050098"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="barlinkl" />
+    <axis
+      xyz="-1 0 0" />
+    <mimic
+      joint="gljoint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+</robot>
